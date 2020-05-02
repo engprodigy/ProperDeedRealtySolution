@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Contracts\IDraftSetup.cs" />
+    <Compile Remove="Contracts\INewBankDraftSetup.cs" />
+    <Compile Remove="FinanceDataModel.cs" />
+    <Compile Remove="Repository\NewBankDraft.cs" />
+    <Compile Remove="Repository\NewBankRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Contracts\IRetailUnitOfWork.cs~RF2397f42.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" Version="2.0.4" />
+  </ItemGroup>
+
+</Project>
