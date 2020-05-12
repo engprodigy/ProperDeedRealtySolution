@@ -23,6 +23,17 @@ demo = {
         }
     },
 
+    checkRowPageBackgroundImage: function () {
+        debugger
+        $page = $('#row-image');
+        image_src = $page.data('image');
+
+        if (image_src !== undefined) {
+            image_container = '<div class="full-page-background" style="background-image: url(' + image_src + ') "/>';
+            $page.append(image_container);
+        }
+    },
+
     initDateTimePicker: function() {
         if($(".datetimepicker").length != 0){
           $('.datetimepicker').datetimepicker({

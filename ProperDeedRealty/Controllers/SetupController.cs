@@ -25,7 +25,7 @@ namespace ProperDeedRealty.Controllers
             return View();
         }
 
-        #region Create
+     /*   #region Create
 
         [HttpPost]
         public JsonResult AddChequeBook([FromBody]TblChequebooktype chequetype)
@@ -619,7 +619,7 @@ namespace ProperDeedRealty.Controllers
             return Json(reversalprivilege.Reversalsetupid);
         }
 
-        #endregion
+        #endregion    */
 
 
         #region Select2 Helper
